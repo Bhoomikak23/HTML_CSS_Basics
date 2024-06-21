@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>rowspan</title>
+        <style>
+            body{
+                background-color: brown;
+            }
+            thead{
+                background-color: aquamarine;
+            }
+            tbody{
+                background-color: cornflowerblue;
+            }
+            table,tr,th,td{
+                border: 2px solid black;
+            }
+            th,td{
+                padding: 15px;
+                text-align: center;
+            }
+            table{
+                width: 100%;
+            }
+            tr:nth-child(odd)
+            td{
+                background-color: cadetblue;
+            }
+            tr:nth-child(even)
+            td{
+                background-color: darkorange;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>topic name</th>
+                    <th>sub topic</th>
+                    <th>no of hrs</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td  rowspan="3">HTML</td>
+                        <td>HTML basic</td>
+                        <td  rowspan="3">2</td>
+                        <tr>
+                            <td>tags</td>
+                        </tr>
+                        <tr>
+                            <td>attributes</td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td  rowspan="3">CSS</td>
+                        <td>Selector</td>
+                        <td  rowspan="3">6</td>
+                        <tr>
+                            <td>color</td>
+                        </tr>
+                        <tr>
+                            <td>font</td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td  rowspan="3">Java script</td>
+                        <td>HTML basic</td>
+                        <td  rowspan="3">2</td>
+                        <tr>
+                            <td>tags</td>
+                        </tr>
+                        <tr>
+                            <td>attributes</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </body>
+</html>

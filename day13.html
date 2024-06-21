@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>website</title>
+<style>
+body{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav article ads"
+        "footer footer footer";
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 10% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    height: 100vh;    /*vertical height */
+}
+header,
+footer,
+article,
+nav,
+div{
+    padding: 2em;
+    background-color: yellow;
+}
+#pageheader{    
+    grid-area: header;
+}
+#mainarticle{
+    grid-area: article;
+}
+#mainnav{
+    grid-area: nav;
+}
+#siteads{
+    grid-area: ads;
+}
+#pagefooter{
+    grid-area: footer;
+}
+</style>
+</head>
+<body>
+    <header id="pageheader">Header</header>
+    <article id="mainarticle">Article</article>   <!-- id is a attribute -->
+    <nav id="mainnav">Nav</nav>
+    <div id="siteads">Ads</div>
+    <footer id="pagefooter">Footer</footer>
+</body>
+</html>

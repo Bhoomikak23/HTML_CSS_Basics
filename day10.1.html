@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .color {
+        background-color: orangered;
+        width: 100px;
+        height: 100px;
+        animation-name: example;
+        animation-duration: 5s;
+      }
+      @keyframes example {
+        from {
+          background-color: orangered;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      p {
+        animation-duration: 5s;
+        animation-name: slidein;
+          animation-timing-function: ease-in;   /* here we can give ease-out and ease-in-out */
+        animation-duration: alternate;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 200%;
+        }
+        50% {
+          font-size: 400%;
+          margin-left: 20%;
+          width: 100%;
+        }
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="color"></div>
+    </center>
+    <p>
+      Animation is a method by which still figures are manipulated to appear as
+      moving images. In traditional animation, images are drawn or painted by
+      hand on ...
+    </p>
+  </body>
+</html>
